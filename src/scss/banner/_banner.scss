@@ -1,0 +1,37 @@
+.banner-content{
+    display: grid;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.banner__main_text{
+    color: $white;
+    font-family: 'Russo One', sans-serif;
+    font-size: 3.5rem;
+    letter-spacing: .015em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.banner__secundary_text{
+    color: $alternative1;
+    // font-family: 'Righteous', cursive;
+    font-family: 'Russo One', sans-serif;
+    font-size: 3rem;
+    letter-spacing: .015em;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.main-content{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.banner__text{
+    color: $alternative1;
+    font-weight: bold;
+    margin-top: -4rem;
+}

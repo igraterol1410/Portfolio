@@ -1,0 +1,44 @@
+.experience__company{
+    color:$alternative1;
+}
+
+.experience__role{
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+    .experience__modality{
+        font-style: italic;
+    }
+}
+
+.experience__dates{
+    color:$alternative1;
+}
+
+.experience__img{
+    width: 100%;
+    object-fit: contain;
+    transition: all ease .5s;
+}
+.experience__img:hover{
+    transform: scale(1.05);
+}
+
+.experience__task-list{
+    padding: .5rem 1rem;
+    background-color: $alternative3;
+}
+
+.experience__task-item{
+    list-style: none;
+    line-height: 1.7rem;
+    margin-bottom: .5rem;
+    transition: all ease .5s;
+    // box-shadow: 1px 1px 5px $alternative3;
+}
+
+.experience__task-icon{
+    color: $alternative1;
+    font-size: 1.5rem;
+    margin-right: .75rem;
+}

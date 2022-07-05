@@ -1,0 +1,20 @@
+.grid__container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+.about_me__text{
+    line-height: 1.75rem;
+}
+
+.highlight__text{
+    color: $alternative1;
+}
+
+@media (max-width: 768px) {
+    .grid__container{
+        display: initial;
+    }    
+}

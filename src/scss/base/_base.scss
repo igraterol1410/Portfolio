@@ -1,0 +1,51 @@
+//Colores
+$primary: #0d192b;
+$secundary: #0c5149;
+$alternative1: #00cbcc;
+$alternative3: lighten($primary,5%);;
+// $alternative1: #0a8967;
+$alternative2: #09c184;
+$text: #07f9a2;
+$white: #f2f2f2;
+
+// Tipografía
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Righteous&family=Roboto:wght@100;300&family=Russo+One&display=swap');
+
+body{
+    font-family: Roboto, sans-serif;
+    background-color: $primary;
+    color: $white;
+    box-sizing: border-box;
+    margin: 0;
+    transition: all ease .5s;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+p{
+    margin: 0;
+}
+
+.section-container{
+    box-sizing: border-box;
+    width: 75%;
+    min-height: calc(100vh - 68px);
+    margin: 1rem auto;
+    padding: 1rem;
+    border-bottom: 1px solid $secundary;
+}
+.section__title{
+    color: $alternative1;
+}
+
+img{
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .section-container{
+        width: 90%;
+    }
+}

@@ -1,0 +1,39 @@
+.portfolio-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 2rem;
+}
+
+.header-icon-container{
+    width: 70px;
+    img{
+        transition: all ease .5s;
+    }
+    img:hover{
+        filter: opacity(.5);
+    }
+}
+
+.header-icon:hover{
+    background-color: #273f4b;
+    color: #6A8595;
+}
+
+.menu-list{
+    display: flex;
+}
+
+.menu-list-item{
+    list-style: none;
+    margin-left: 4rem;
+}
+
+@media (max-width: 768px) {
+    .portfolio-header{
+        display: initial;
+    }
+    .menu-list{
+        display: initial;
+    }
+}
