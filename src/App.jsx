@@ -1,13 +1,21 @@
+import { useEffect } from 'react'
 import Header from './components/Header'
 import Profile from './components/Profile'
 import Experience from './components/Experience'
 import Proyects from './components/Projects'
-import Skills from './components/Skills'
+import SocialLinks from './components/SocialLinks'
 import Contact from './components/Contact'
 import './scss/app.scss'
 import MainBanner from './components/MainBanner'
 
-function App() {
+import Aos from 'aos';
+
+function App() { 
+  
+  useEffect(()=>{
+    Aos.init({ duration:700 })
+  },[])
+
   return (
     <div className="portfolio-container">
       <Header />
@@ -15,8 +23,8 @@ function App() {
       <Profile />
       <Experience />
       <Proyects />
-      <Skills />
       <Contact />
+      <SocialLinks />
     </div>
   )
 }

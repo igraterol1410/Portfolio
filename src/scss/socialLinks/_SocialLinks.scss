@@ -1,0 +1,24 @@
+.social__links-section{
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+
+    a{
+        transition: all ease .5s;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    a:hover{
+        color:$alternative1;
+    }
+
+    @media (max-width: 768px) {
+        position: initial;
+        padding-bottom: 4rem;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

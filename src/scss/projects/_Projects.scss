@@ -13,7 +13,6 @@
             width: 100%;
             object-fit: cover;
             border-radius: 8px;
-            filter: opacity(.5);
         }
     }
 
@@ -21,15 +20,37 @@
         text-align: right;
         transition: all ease .7s;
     }
-}
 
-.project__card:hover{
-    transform: scale(1.03);
-    .project__image-container{
-        margin-right: 1rem;
-    }      
-    & img {
-        filter: opacity(1);
+    @media (max-width: 768px) {
+
+        .project__image-container{
+            margin-right: 0;
+            position: relative;
+            top: 0;
+            width: 100%;
+            height: 100%;
+
+            & img{
+                position: absolute;
+                top: 0;
+                object-fit: contain;
+                opacity: .1;
+                z-index: -1;
+                width: 100%;
+            }
+        }
+
+        .project__description-container{
+            position: relative;
+            text-align: left;
+            padding: 1rem;
+            margin-top: 2rem;
+            box-shadow: 10px 1px 20px $alternative3;
+
+            .project__name{
+                text-align: left;
+            }
+        }
     }
 }
 
@@ -40,6 +61,10 @@
 .project__description-text{
     padding: .5rem;
     background-color: $alternative3;
+
+    @media (max-width: 768px) {
+        background-color: transparent;
+    }
 }
 
 

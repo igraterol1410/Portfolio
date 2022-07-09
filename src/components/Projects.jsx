@@ -35,16 +35,20 @@ const Proyects = () => {
       <div className='projects__container'>
         {
           myProjects.map((project, index) =>(
-            <div className='grid__container project__card' key={project.name}>
-              <div className={index === 1 || index === 3 ? 'project__image-container child__od' : 'project__image-container'}>
-                <a href={project.link} target='_blank'><img src={project.photo} alt="" /></a>
+            <a href={project.link} target='_blank'>
+              <div data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000" className='grid__container project__card' key={project.name}>
+                  <div className={index === 1 || index === 3 ? 'project__image-container child__od' : 'project__image-container'}>
+                    <img src={project.photo} alt="" />
+                  </div>
+                <div className={index === 1 || index === 3 ? 'project__description-container description__odd' : 'project__description-container'}>
+                  <h4 className='project__name'><a href={project.link} target='_blank'>{project.name}</a></h4>
+                  <p className='project__description-text'>{project.description}</p>
+                  <p className='project__description-tech'>{project.tech}</p>
+                </div>
               </div>
-              <div className={index === 1 || index === 3 ? 'project__description-container description__odd' : 'project__description-container'}>
-                <h4 className='project__name'><a href={project.link} target='_blank'>{project.name}</a></h4>
-                <p className='project__description-text'>{project.description}</p>
-                <p className='project__description-tech'>{project.tech}</p>
-              </div>
-            </div>
+            </a>
           ))
         }
       </div>

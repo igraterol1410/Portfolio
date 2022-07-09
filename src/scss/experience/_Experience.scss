@@ -20,13 +20,17 @@
     object-fit: contain;
     transition: all ease .5s;
 }
-.experience__img:hover{
-    transform: scale(1.05);
-}
 
 .experience__task-list{
     padding: .5rem 1rem;
     background-color: $alternative3;
+
+    @media (max-width: 768px) {
+
+        &{
+            background-color: transparent;
+        }
+    }
 }
 
 .experience__task-item{

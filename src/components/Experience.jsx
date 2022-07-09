@@ -32,24 +32,28 @@ const Experience = () => {
       <h2 className='section__title'>Experience</h2>
       {
         myExperience.map((exp) => (
-          <div key={exp.company} className='grid__container'>
-            <div>
-              <h3 className='experience__company'><a href="https://castor.app" target='_blank'>{exp.company}</a></h3>
-              <p className='experience__role'>{exp.role} - <span className='experience__modality'>({exp.modality})</span></p>
-              
-              <p className='experience__dates'>{exp.dates}</p>
-              <ul className='experience__task-list'>
-                {
-                  exp.tasks.map((task) => (
-                    <li className='experience__task-item' key={task.task}><AiFillThunderbolt className='experience__task-icon' />{task.task}</li>
-                  ))
-                }
-              </ul>
+          <a href="https://castor.app" target='_blank'>
+            <div data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000" key={exp.company} className='grid__container experience__card'>
+              <div>
+                <h3 className='experience__company'>{exp.company}</h3>
+                <p className='experience__role'>{exp.role} - <span className='experience__modality'>({exp.modality})</span></p>
+                
+                <p className='experience__dates'>{exp.dates}</p>
+                <ul className='experience__task-list'>
+                  {
+                    exp.tasks.map((task) => (
+                      <li className='experience__task-item' key={task.task}><AiFillThunderbolt className='experience__task-icon' />{task.task}</li>
+                    ))
+                  }
+                </ul>
+              </div>
+              <div className='experience__img-container'>
+                <img className='experience__img' src={exp.logo} alt={`logo ${exp.company}`} />
+              </div>
             </div>
-            <div>
-              <a href="https://castor.app" target='_blank'><img className='experience__img' src={exp.logo} alt={`logo ${exp.company}`} /></a>
-            </div>
-          </div>
+          </a>
         ))
       }
     </section>

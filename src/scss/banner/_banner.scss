@@ -1,4 +1,5 @@
 .banner-content{
+    min-height: calc(100vh - 68px);
     display: grid;
     align-items: center;
     margin-top: 0;
@@ -14,6 +15,11 @@
     letter-spacing: .015em;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+    }
 }
 .banner__secundary_text{
     color: $alternative1;
@@ -23,6 +29,10 @@
     letter-spacing: .015em;
     margin-top: 0;
     margin-bottom: 1rem;
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+    }
 }
 
 .main-content{

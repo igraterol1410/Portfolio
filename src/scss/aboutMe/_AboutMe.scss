@@ -5,8 +5,86 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
 }
+
+.profile__pic-container{
+    width: 100%;
+    height: 50%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 50vw;
+        margin: auto;
+        margin-bottom: 1rem;
+    } 
+}
+
+.profile__pic{
+    object-fit: cover;
+    object-position: 0 -100px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    filter:brightness(.7);
+    
+    @media (max-width: 768px) {
+        filter:brightness(1);
+        object-position: 0 -70px;
+        border-radius: 0;
+    } 
+}
+
+.profile__pic:hover{
+    filter:brightness(1)
+}
+
+.about_me__description{
+    padding: 1.5rem;
+    background-color: $alternative3;
+    text-align: right;
+
+    @media (max-width: 768px) {
+        text-align: left;
+    }
+}
+
+.about_me__p{
+    @media (max-width: 768px) {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    } 
+}
+
+.skills__item{
+    @media (max-width: 768px) {
+        padding: 1rem;
+        margin-bottom: .5rem;
+        text-align: center;
+        border: 1px solid $alternative1;
+        border-radius: 8px;
+        width: auto;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: center;
+        justify-content: center;
+    } 
+}
+
 .about_me__text{
-    line-height: 1.75rem;
+    line-height: 2rem;
+    // font-size: 1.2rem;
+}
+.skills__container{
+    list-style: none;
+}
+
+.skills__icon{
+    margin-left: .75rem;
+    color: $alternative1;
+    font-size: 1.2rem;
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    } 
 }
 
 .highlight__text{
