@@ -20,7 +20,7 @@ const Profile = () => {
           <img className='profile__pic' src={ProfilePic} alt="Profile Pic" />
         </div>
         <div className='about_me__description' data-aos="zoom-in">
-          <p className='about_me__text'>My name is Isaid Graterol, I graduated in mechatronics engineering in 2018, and my beginnings in the area of programming began in 2013 while I was at university, I started learning assembly and C, where I developed some projects at an academic level, from that moment until now I have oriented everything I knew to web development using <span className='highlight__text'>JavaScript, HTML5, CSS3, SASS, ReactJs and Redux.</span>
+          <p className='about_me__text'>My name is Isaid Graterol, I graduated in mechatronics engineering in 2018, and my beginnings in the area of programming began in 2013 while I was in college, I started learning assembler and C, where I developed some projects at an academic level, from that moment to now I have oriented everything I knew to web development using <span className='highlight__text'>JavaScript, HTML5, CSS3, SASS, ReactJs and Redux.</span>
           </p>
           <p className='about_me__p'>Here are a few technologies I’ve been working with recently:</p>
           <ul className='grid__container skills__container'>
