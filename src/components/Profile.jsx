@@ -25,7 +25,7 @@ const Profile = () => {
           <p className='about_me__p'>Here are a few technologies i’ve been working with recently:</p>
           <ul className='grid__container skills__container'>
             <li className='skills__item'>JavaScript (ES6+)<DiJavascript1 className='skills__icon'/></li>
-            <li className='skills__item'>ReactJs<DiReact className='skills__icon'/></li>
+            <li className='skills__item'>React Js<DiReact className='skills__icon'/></li>
             <li className='skills__item'>Styled Components<SiStyledcomponents className='skills__icon'/></li>
             <li className='skills__item'>Chakra UI<SiChakraui className='skills__icon'/></li>
             <li className='skills__item'>Redux Thunk<SiRedux className='skills__icon'/></li>
