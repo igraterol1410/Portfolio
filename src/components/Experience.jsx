@@ -1,6 +1,7 @@
 import React from 'react'
 
 import LogoCastor from '../assets/img/experience/b2b_hero.png';
+import Ibankey from '../assets/img/experience/Ibaney-Borrower.png';
 
 import { AiFillThunderbolt } from "react-icons/ai";
 AiFillThunderbolt
@@ -24,7 +25,21 @@ const Experience = () => {
         {'task':'Create flows focused on user experience.'},
         {'task':'Build Service payment functionality using internal APIs.'}
       ]
-    }
+    },
+    {
+      'company':'Ibankey',
+      'logo': Ibankey,
+      'dates': 'Nov 2022 - Present',
+      'role': 'Frontend Developer',
+      'modality': 'Remote',
+      'tasks':[
+        {'task':'Version control using Azure DevOps.'},
+        {'task':'Create an onboarding process for borrowers.'},
+        {'task':'Global management of the application state using Redux Toolkit.'},
+        {'task':'Dashboard layout and components using CSS3 and Chakra UI.'},
+        {'task':'Collaborative work using Azure board.'}
+      ]
+    },
   ]
 
   return (

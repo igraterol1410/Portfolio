@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import ProfilePic from '../assets/img/aboutMe/perfil-2.jpeg'
 
 import { DiJavascript1,DiReact } from "react-icons/di";
-import { SiStyledcomponents,SiChakraui,SiRedux } from "react-icons/si";
+import { SiStyledcomponents,SiChakraui,SiRedux,SiFirebase,SiGatsby } from "react-icons/si";
 
 import Aos from 'aos';
 
@@ -30,6 +30,8 @@ const Profile = () => {
             <li className='skills__item'>Chakra UI<SiChakraui className='skills__icon'/></li>
             <li className='skills__item'>Redux Thunk<SiRedux className='skills__icon'/></li>
             <li className='skills__item'>Redux Toolkit<SiRedux className='skills__icon'/></li>
+            <li className='skills__item'>Firebase<SiFirebase className='skills__icon'/></li>
+            <li className='skills__item'>GatsbyJs<SiGatsby className='skills__icon'/></li>
           </ul>
         </div>
       </div>

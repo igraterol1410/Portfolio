@@ -6,6 +6,20 @@
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
+    position: relative;
+
+    img{
+        position: absolute;
+        top: 20%;
+        right: 40px;
+        max-width: 250px;
+    }
+    
+    .second-animation{
+        opacity: .2;
+        max-width: 500px;
+        z-index: -1;
+    }
 }
 
 .banner__main_text{

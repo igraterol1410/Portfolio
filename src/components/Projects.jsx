@@ -3,6 +3,8 @@ import React from 'react'
 import KokoroPic from '../assets/img/projects/Kokoro.png'
 import CO2Pic from '../assets/img/projects/CO2-Footprint.png'
 import Dbocados from '../assets/img/projects/Dbocados-Home.png'
+import InversionesRamos from '../assets/img/projects/Inversiones-ramos.png'
+import EnzoInfoSolutions from '../assets/img/projects/Enzo-info-solutions.png'
 
 const Proyects = () => {
 
@@ -15,9 +17,24 @@ const Proyects = () => {
       tech:'ReactJs, Redux Toolkit, SASS, axios, ChartJs'
     },
     {
+      name: 'Enzo Info Solutions',
+      photo: EnzoInfoSolutions,
+      description:'Landing Page for Enzo Info Solutions. Global outsourcing company with a focus based on offering services across domains including Web development, Internet Marketing, Mobile App Development, Technical Consulting, E-commerce Solutions, and Software Application Management to our clients.',
+      link:'https://enzoinfotech.azurewebsites.net/',
+      tech:'ReactJs, GatsbyJs, ChakraUI'
+    },
+    {
+      name: 'Inversiones Ramos',
+      photo: InversionesRamos,
+      description:'Website for a cleaning products distribution company, with a digital catalog where the user can search for desired products and an application for generating quotes for products requested by the customer.',
+      link:'https://inversionesramos.vercel.app/cotizar',
+      tech:'ReactJs, ChakraUI, EmailJs'
+    },
+    {
       name: 'Kokoro',
       photo: KokoroPic,
       description:'Built a mobile version of Kokoro, a Chilean web application with all the steps to recruit workers. Developed with ReactJs and Styled Components.',
+      link:'https://front-kokoro.vercel.app/process',
       tech:'ReactJs, Styled Components'
     },
     {
