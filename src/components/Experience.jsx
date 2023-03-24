@@ -14,6 +14,7 @@ const Experience = () => {
       'dates': 'Sep 2021 - Present',
       'role': 'Engineering',
       'modality': 'Remote',
+      'link': 'https://castor.app',
       'tasks':[
         {'task':'Project migration from HTML and CSS to ReactJs, using SASS for styles.'},
         {'task':'Create new functionalities in a scalable way.'},
@@ -32,6 +33,7 @@ const Experience = () => {
       'dates': 'Nov 2022 - Present',
       'role': 'Frontend Developer',
       'modality': 'Remote',
+      'link': 'https://ibankey.co.in/',
       'tasks':[
         {'task':'Version control using Azure DevOps.'},
         {'task':'Create an onboarding process for borrowers.'},
@@ -47,7 +49,7 @@ const Experience = () => {
       <h2 className='section__title'>Experience</h2>
       {
         myExperience.map((exp) => (
-          <a href="https://castor.app" target='_blank'>
+          <a href={exp.link} target='_blank'>
             <div data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="1000" key={exp.company} className='grid__container experience__card'>
