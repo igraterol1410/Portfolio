@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Cotify from '../assets/img/projects/cotify.gif'
+import Sereno from '../assets/img/projects/sereno.gif'
 import KokoroPic from '../assets/img/projects/Kokoro.png'
 import CO2Pic from '../assets/img/projects/CO2-Footprint.png'
 import Dbocados from '../assets/img/projects/Dbocados-Home.png'
@@ -9,6 +11,20 @@ import EnzoInfoSolutions from '../assets/img/projects/Enzo-info-solutions.png'
 const Proyects = () => {
 
   const myProjects = [
+    {
+      name: 'Cotify App',
+      photo: Cotify,
+      description:'Cotify is a personal project designed with food entrepreneurs in mind, allowing them to accurately and easily manage their raw material inventory, while also keeping track of their income and expenses to maintain control of their business. It also simplifies the storage and scaling of recipes. This project is in continuous development and continues to grow, currently with over 100 paid users. I designed it from the ground up, handling the UI, logic, user experience, and database. The app was built using Next.js, Chakra UI, and Firebase as the database',
+      link:'https://cotify.app',
+      tech:'Next Js, Chakra UI, Firebase'
+    },
+    {
+      name: 'Sereno',
+      photo: Sereno,
+      description:'I developed the user interface for Sereno App, a web application that facilitates cross-border currency exchanges in a simple and efficient manner. The interface was designed using Next.js as the primary framework, specifically version 14, with Tailwind CSS for styling. For backend integration, I employed GraphQL with Apollo Client. I was responsible for implementing the entire logic and database integration of the web app, including real-time user connections, resulting in an exceptional user experience.',
+      link:'https://www.sereno.lat/',
+      tech:'Next Js, Tailwind, GraphQL'
+    },
     {
       name: 'CO2 Footprint',
       photo: CO2Pic,
@@ -52,11 +68,11 @@ const Proyects = () => {
       <div className='projects__container'>
         {
           myProjects.map((project, index) =>(
-            <a href={project.link} target='_blank'>
+            <a key={index} href={project.link} target='_blank'>
               <div data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="1000" className='grid__container project__card' key={project.name}>
-                  <div className={index === 1 || index === 3 ? 'project__image-container child__od' : 'project__image-container'}>
+                  <div className={index%2 > 0 ? 'project__image-container child__od' : 'project__image-container'}>
                     <img src={project.photo} alt="" />
                   </div>
                 <div className={index === 1 || index === 3 ? 'project__description-container description__odd' : 'project__description-container'}>

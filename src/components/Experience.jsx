@@ -1,6 +1,7 @@
 import React from 'react'
 
 import LogoCastor from '../assets/img/experience/b2b_hero.png';
+import Flexza from '../assets/img/experience/flexza.gif';
 import Ibankey from '../assets/img/experience/Ibaney-Borrower.png';
 
 import { AiFillThunderbolt } from "react-icons/ai";
@@ -9,9 +10,26 @@ const Experience = () => {
 
   const myExperience = [
     {
+      'company':'Flexza',
+      'logo': Flexza,
+      'dates': 'Dec 2023 - Present',
+      'role': 'Engineering',
+      'modality': 'Remote',
+      'link': 'https://flexza.com',
+      'tasks':[
+        {'task':'Create features in a scalable way.'},
+        {'task':'Manage the global state of the application using useQuery'},
+        {'task':'Collaborative work with a group of developers using Git and GitHub.'},
+        {'task':'Automated test development using Playwright.'},
+        {'task':'Structured and organized work with Jira.'},
+        {'task':'Create flows focused on user experience.'},
+        {'task':'Build Service payment functionality using internal APIs.'}
+      ]
+    },
+    {
       'company':'Castor Inc.',
       'logo': LogoCastor,
-      'dates': 'Sep 2021 - Present',
+      'dates': 'Sep 2021 - Dec 2023',
       'role': 'Engineering',
       'modality': 'Remote',
       'link': 'https://castor.app',
@@ -30,7 +48,7 @@ const Experience = () => {
     {
       'company':'Ibankey',
       'logo': Ibankey,
-      'dates': 'Nov 2022 - Present',
+      'dates': 'Nov 2022 - Sep 2023',
       'role': 'Frontend Developer',
       'modality': 'Remote',
       'link': 'https://ibankey.co.in/',
