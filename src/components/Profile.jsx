@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import ProfilePic from '../assets/img/aboutMe/perfil-2.jpeg'
+import ProfilePic2 from '../assets/img/aboutMe/profile.gif'
 
 import { DiJavascript1,DiReact } from "react-icons/di";
-import { SiStyledcomponents,SiChakraui,SiRedux,SiFirebase,SiGatsby } from "react-icons/si";
+import { SiStyledcomponents,SiChakraui,SiRedux,SiFirebase,SiGatsby, SiTypescript, SiApollographql } from "react-icons/si";
 
 import Aos from 'aos';
 
@@ -17,14 +17,16 @@ const Profile = () => {
       <h2 data-aos='fade-right' id='aboutMe' className='section__title'>About me</h2>
       <div className='grid__container'>
         <div data-aos="zoom-in" className='profile__pic-container'>
-          <img className='profile__pic' src={ProfilePic} alt="Profile Pic" />
+          <img className='profile__pic' src={ProfilePic2} alt="Profile Pic" />
         </div>
         <div className='about_me__description' data-aos="zoom-in">
-          <p className='about_me__text'>My name is Isaid Graterol, i graduated in mechatronics engineering in 2018, and my beginnings in the area of programming began in 2013 while i was in college, i started learning assembler and C, where i developed some projects at an academical level, from that moment to now i have oriented everything i knew to web development using <span className='highlight__text'>JavaScript, HTML5, CSS3, SASS, ReactJs and Redux.</span>
+          <p className='about_me__text'>My name is Isaid Graterol, passionate Frontend Developer with 3+ years of experience crafting intuitive and efficient digital solutions. Proficient in ReactJs, NextJs, and TypeScript, I've successfully built high-impact user interfaces. My personal project, Cotify, a web app streamlining restaurant business calculations, showcases my ability to transform ideas into practical solutions. A self-taught problem-solver, I'm dedicated to quality and usability.
           </p>
           <p className='about_me__p'>Here are a few technologies i’ve been working with recently:</p>
           <ul className='grid__container skills__container'>
-            <li className='skills__item'>JavaScript (ES6+)<DiJavascript1 className='skills__icon'/></li>
+            <li className='skills__item'>JavaScript<DiJavascript1 className='skills__icon'/></li>
+            <li className='skills__item'>TypeScript<SiTypescript className='skills__icon'/></li>
+            <li className='skills__item'>GraphQL<SiApollographql className='skills__icon'/></li>
             <li className='skills__item'>React Js<DiReact className='skills__icon'/></li>
             <li className='skills__item'>Styled Components<SiStyledcomponents className='skills__icon'/></li>
             <li className='skills__item'>Chakra UI<SiChakraui className='skills__icon'/></li>

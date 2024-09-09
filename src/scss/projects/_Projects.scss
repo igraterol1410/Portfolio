@@ -56,10 +56,13 @@
 
 .project__name{
     text-align: right;
+    font-size: 1.74rem;
 }
 
 .project__description-text{
-    padding: .5rem;
+    padding: 1rem;
+    border-radius: 15px;
+    font-size: 1.1rem;
     background-color: $alternative3;
 
     @media (max-width: 768px) {
@@ -70,6 +73,8 @@
 
 .project__description-tech{
     margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
     color: $alternative1;
 }
 
