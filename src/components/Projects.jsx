@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Cotify from '../assets/img/projects/cotify.gif'
+import Cotify from '../assets/img/projects/Cotify.gif'
 import Sereno from '../assets/img/projects/sereno.gif'
 import KokoroPic from '../assets/img/projects/Kokoro.png'
 import CO2Pic from '../assets/img/projects/CO2-Footprint.png'
